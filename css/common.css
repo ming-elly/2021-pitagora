@@ -1,0 +1,167 @@
+@charset "UTF-8";
+
+*{
+     box-sizing: border-box;
+}
+
+body{
+    margin: 0 auto; /*中央寄せ*/
+    font-family: merel,  sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    /* フォントの変更*/
+}
+
+a{
+    text-decoration: none; /* aタグの下線消す*/
+}
+
+header{
+    width: 100%;
+    height: 78px;
+    background-color: rgba(41, 154, 189, 0.5); /*透過度指定付き*/
+    position: fixed; /*スクロールしてもついてくるように*/
+    z-index: 10;  /*ヘッダーが隠れないように*/
+}
+
+.container{
+    width: 100%;
+}
+
+.header-left{
+    float: left; /*左寄せ*/
+    color: #ffffff;
+    opacity: 0.7; /*文字の透明度*/
+    padding-top: 0px;
+}
+            
+.header-right{
+    float: right; /*右寄せ*/
+    color: #ffffff;
+    line-height: 78px;
+}
+
+.header-right a{
+    padding-right: 20px;
+    padding-left: 20px;
+    display: inline-block;
+    color: #ffffff;
+    font-family: condor, sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 16px;
+    opacity: 0.7;
+}
+
+.header-right a:hover{
+    background-color: rgba(255,255,255, 0.3);
+}
+
+/*.top-background{ 動画が上手く動作しない場合用
+    width: 100%;
+    padding: 450px 0 450px 0;
+    background-image: url(../images/background.png);
+    background-size: cover;
+    min-width: 1440px;
+    position: relative;
+}
+
+.top-background video{
+    z-index: -10;
+}
+
+.top-background h1{
+    font-size: 36px;
+    opacity: 0.7;
+    position: absolute;
+    z-index: 1;
+}
+        
+.top-background p{
+    font-size:18px;
+    opacity: 0.7;
+    position: absolute;
+    z-index: 1;
+}*/
+
+.top-background{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  /*高さの確保をしないと下の要素が詰めてくる*/
+.top-background p{
+    font-family: yu-gothic-pr6n, sans-serif;
+    font-style: normal;
+}
+
+.main-txt{ /*タイトル*/
+    color: #ffffff;
+    font-size: 40px;
+    font-family: corporate-logo-ver2, sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    text-align: center;
+    letter-spacing: 3px;
+    opacity: 0.7;
+}
+  
+.sub-txt{ /* サブタイトル*/
+    color: #ffffff;
+    font-size: 20px;
+    font-family: corporate-logo-ver2, sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    text-align: center;
+    opacity: 0.7;
+}
+
+.video{
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: hidden; /*要素が飛び出た際に飛び出た要素を隠す*/
+    z-index: -100; /*動画を最下層に配置*/
+  }
+
+  .video::after{ /*filter*/
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-color: #a1c6d6;
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0.3;
+}
+.video video{
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+footer{
+    width: 100%;
+    min-width: 1440px;
+    height: 100px;
+    background-color: rgba(25, 118, 141, 0.8);
+}
+
+.footer-exp{
+    color: #ffffff;
+    opacity: 0.8;
+    float:  left;
+}
+
+.footer-exp p{
+    margin: 10px 0px 10px 10px;
+}

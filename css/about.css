@@ -1,0 +1,93 @@
+p{
+    font-family: zen-kaku-gothic-new, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.about-video{
+    width: 100%;
+    min-width: 1440px;
+    margin-top: 200px;
+    text-align: center;
+    margin-bottom: 200px;
+}
+
+.video-txt{
+    margin-top: 50px;
+}
+
+.about-top{
+    width: 100%;
+    min-width: 1440px;
+    margin-top: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.top-txt{
+    width: 340px;
+}
+
+.top-txt p{
+    font-family: zen-kaku-gothic-new, sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 30px;
+    letter-spacing: 1px;
+}
+
+.about-planet{
+    width: 100%;
+    min-width: 1440px;
+    height: 600px;
+    margin-top: 150px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.about-planet p{
+    font-family: zen-kaku-gothic-new, sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 30px;
+    letter-spacing: 2px;
+}
+
+.mid-txt{
+    width: 320px;
+    margin-left: 39px;
+}
+
+.about-bottom{
+    width: 100%;
+    min-width: 1440px;
+    margin-top: 200px;
+    text-align: center;
+    margin-bottom: 200px;
+}
+
+.number{
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.bottom-txt{
+    margin-top: 50px;
+}
+
+.about-bottom{
+    width: 100%;
+    min-width: 1440px;
+    margin-bottom: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.about-bottom p{
+    font-size: 15px;
+}

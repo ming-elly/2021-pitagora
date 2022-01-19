@@ -57,6 +57,10 @@ header{
     background-color: rgba(255,255,255, 0.3);
 }
 
+.sp-header{
+    display: none;
+}
+
 /*.top-background{ 動画が上手く動作しない場合用
     width: 100%;
     padding: 450px 0 450px 0;
@@ -94,6 +98,10 @@ header{
 .top-background p{
     font-family: yu-gothic-pr6n, sans-serif;
     font-style: normal;
+}
+
+.sp-background{
+    display: none;
 }
 
 .main-txt{ /*タイトル*/
@@ -151,7 +159,6 @@ header{
 
 footer{
     width: 100%;
-    min-width: 1440px;
     height: 100px;
     background-color: rgba(25, 118, 141, 0.8);
 }
@@ -164,4 +171,136 @@ footer{
 
 .footer-exp p{
     margin: 10px 0px 10px 10px;
+}
+
+.sp-footer{
+    display: none;;
+}
+
+@media screen and (max-width: 640px){
+    body{
+        max-width: 100%;
+    }
+
+    .container{
+        display: none;
+    }
+    .sp-header{
+        display: block;
+    }
+    .sp-header a{
+        text-decoration: none;
+        color: white;
+        font-family: condor, sans-serif;
+        font-weight: 300;
+        font-style: normal;
+        opacity: 0.7;
+    }
+
+    .sp-header ul{
+        list-style-type: none;
+    }
+
+    .drawer-hidden {
+        display: none;
+    }
+    
+    .drawer-open {
+        display: flex;
+        height: 60px;
+        width: 60px;
+        right: -20px;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        z-index: 100;
+        cursor: pointer;
+    }
+    
+    .drawer-open span,
+    .drawer-open span:before,
+    .drawer-open span:after {
+        content: '';
+        display: block;
+        height: 3px;
+        width: 25px;
+        border-radius: 3px;
+        background: #fff;
+        transition: 0.5s;
+        position: absolute;
+    }
+    
+    .drawer-open span:before {
+        bottom: 8px;
+    }
+    .drawer-open span:after {
+        top: 8px;
+    }
+    
+    #drawer-check:checked ~ .drawer-open span {
+        background: rgba(255, 255, 255, 0);
+    }
+    #drawer-check:checked ~ .drawer-open span::before {
+        bottom: 0;
+        transform: rotate(45deg);
+    }
+    #drawer-check:checked ~ .drawer-open span::after {
+        top: 0;
+        transform: rotate(-45deg);
+    }
+    
+    
+    .drawer-content {
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        top: 0;
+        left: 100%;
+        z-index: 99;
+        background: rgba(41, 154, 189, 0.5);
+        transition: .5s;
+    }
+    .drawer-content ul {
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        color: #fff;
+        font-size: 40px;
+     }
+     .drawer-content li {
+        margin: 0;
+        padding: 0;
+     }
+   
+     .drawer-content li a, .drawer-content li span {
+        display: block;
+        padding: 20px 0;
+     }
+    
+  
+    #drawer-check:checked ~ .drawer-content {
+        left: 0;
+    }
+
+    .top-background{
+        display: none;
+    }
+    .video{
+        display: none;
+    }
+
+    .sp-background{
+        display: block;
+    }
+
+    .footer-exp{
+        display: none;
+    }
+    .sp-footer{
+        display: block;
+        color: white;
+    }
 }

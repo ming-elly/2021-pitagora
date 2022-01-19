@@ -25,3 +25,33 @@ p{
     font-size: 16px;
     letter-spacing: 1px;
 }
+
+.sp-member-main{
+    display: none;
+}
+
+@media screen and (max-width: 640px) {
+    .member-main{
+        display: none;
+    }
+
+    .sp-member-main{
+        display: block;
+    }
+
+    .sp-member-main{
+        margin-top: 250px;
+        text-align: center;
+    }
+
+    .sp-member-txt{
+        margin-top: 80px;
+        margin-bottom: 150px;
+        font-family: zen-kaku-gothic-new, sans-serif;
+        font-weight: 400;
+        font-style: normal;
+    }
+
+    
+    
+}

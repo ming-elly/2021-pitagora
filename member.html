@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/member.css">
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <!-- フォント用 CSS / JavaScript-->
     <link rel="stylesheet" href="https://use.typekit.net/huv6piu.css">
     <script>
@@ -32,6 +34,7 @@
     <title>Member</title>
 </head>
 <body>
+
     <header>
         <div class="container">
             <div class="header-left">
@@ -44,7 +47,24 @@
                 <a href="gallery.html">Gallery</a>
             </div>
         </div>
+
+        <div class="sp-header">
+            <div class="drawer">
+                <input type="checkbox" id="drawer-check" class="drawer-hidden">
+                <label for="drawer-check" class="drawer-open"><span></span></label>
+
+                <nav class="drawer-content">
+                    <ul class="drawer-list">
+                        <li class="drawer-item"><a href="index.html">Intro</a></li>
+                        <li class="drawer-item"><a href="about.html">About</a></li>
+                        <li class="drawer-item"><a href="member.html">Member</a></li>
+                        <li class="drawer-item"><a href="gallery.html">Gallery</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
     </header>
+
     <div class="top-background">
         <div class="background-txt">
             <p class="main-txt">インタラクティブピタゴラ作品</p>
@@ -54,6 +74,9 @@
       <div class="video">
         <video src="images/background1.mp4" autoplay loop muted></video>
       </div>
+
+    <img src="images/background-sp.webp" alt="背景" class="sp-background">
+
     <div class ="member-main">
         <div class="member-image">
             <img src="images/gallery/kaiousei.webp">
@@ -84,10 +107,47 @@
             <p>名前 : </p>
         </div>
     </div>
+
+    <div class ="sp-member-main">
+        <div class="sp-member-image">
+            <img src="images/gallery/kaiousei.webp" width="80%">
+        </div>
+        <div class="sp-member-txt">
+            <p>役割 : Arduino装置作製 / ロゴ制作</p>
+            <p>名前 : </p>
+        </div>
+        <div class="sp-member-image">
+            <img src="images/gallery/dosei.webp" width="85%">
+        </div>
+        <div class="sp-member-txt">
+            <p>役割 : ピタゴラ装置作製 / 作品ギミック説明動画</p>
+            <p>名前 : </p>
+        </div>
+        <div class="sp-member-image">
+            <img src="images/gallery/kinsei.webp" width="80%">
+        </div>
+        <div class="sp-member-txt">
+            <p>役割 : ピタゴラ装置作製 / 作品紹介動画</p>
+            <p>名前 : </p>
+        </div>
+        <div class="sp-member-image">
+            <img src="images/gallery/chikyu.webp" width="80%">
+        </div>
+        <div class="sp-member-txt">
+            <p>役割 : ピタゴラ装置作製 / Web作成</p>
+            <p>名前 : </p>
+        </div>
+    </div>
+
     <footer>
         <div class="footer-exp">
             <p>2021 情報表現基礎Ⅲ チーム４ 「コロコロ太陽系」</p>
             <p>グループワーク課題 - インタラクティブピタゴラ装置 -</p>
+        </div>
+
+        <div class="sp-footer">
+            <p> 2021 情報表現基礎Ⅲ チーム4</p>
+            <p>「コロコロ太陽系」</p>
         </div>
     </footer>
 </body>

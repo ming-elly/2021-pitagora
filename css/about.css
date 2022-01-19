@@ -87,14 +87,54 @@ p{
     font-size: 15px;
 }
 
+.sp-about-container{
+    display: none;
+}
+
 @media screen and (max-width:670px) {
+    .about-video{
+        display: none;
+    }
     .about-top{
-        width: 100%;
+        display: none;
+    }
+    .about-planet{
+        display: none;
+    }
+    .about-bottom{
+        display: none;
+    }
+
+    .sp-about-container{
+        display: block;
+        text-align: center;
+    }
+    .sp-about-container p{
+        font-family: zen-kaku-gothic-new, sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 14px;
+    }
+
+    .sp-about-video{
+        margin-bottom: 100px;
+    }
+
+    .sp-about-top{
         margin-top: 100px;
-        align-items: center;
+        text-align: center;
     }
-    
-    .top-txt{
-        width: 100%;
+
+    .sp-gimikku-intro{
+        margin-top: 100px;
+        margin-bottom: 50px;
     }
+    .sp-gimikku-intro p{
+        font-size: 24px;
+    }
+
+    .sp-about-planet{
+        margin-bottom: 100px;
+    }
+
 }

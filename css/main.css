@@ -18,3 +18,35 @@
     font-size: 16px;
     letter-spacing: 1px;
 }
+
+.sp-main{
+    display: none;
+}
+
+@media screen and (max-width: 640px) {
+    .main{
+        display: none;
+    }
+
+    .sp-main{
+        display: block;
+        margin-top: 180px;
+        text-align: center;
+        margin-bottom: 200px;
+    }
+
+    .sp-main .title{
+        font-family: zen-kaku-gothic-new, sans-serif;
+        font-weight: 500;
+        font-style: normal;
+        font-size: 26px;
+        letter-spacing: 3px;
+    }
+    
+    .sp-main p{
+        font-family: zen-kaku-gothic-new, sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        letter-spacing: 1px;
+    }
+}

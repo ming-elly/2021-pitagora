@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/main.css">
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <!-- フォント用 CSS / JavaScript-->
     <link rel="stylesheet" href="https://use.typekit.net/huv6piu.css">
     <script>
@@ -28,23 +30,39 @@
       h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
     })(document);
   </script>
-
-    <title>Main</title>
+    <title>Intro</title>
 </head>
 <body>
-    <header>
-        <div class="container">
-            <div class="header-left">
-                <img src="images/logo.webp" width="90%" height="90%">
-            </div>
-            <div class="header-right">
-                <a href="index.html".html">Main</a>
-                <a href="about.html">About</a>
-                <a href="member.html">Member</a>
-                <a href="gallery.html">Gallery</a>
-            </div>
+
+  <header>
+    <div class="container">
+        <div class="header-left">
+            <img src="images/logo.webp" width="90%" height="90%">
         </div>
-    </header>
+        <div class="header-right">
+            <a href="index.html">Main</a>
+            <a href="about.html">About</a>
+            <a href="member.html">Member</a>
+            <a href="gallery.html">Gallery</a>
+        </div>
+    </div>
+
+    <div class="sp-header">
+        <div class="drawer">
+            <input type="checkbox" id="drawer-check" class="drawer-hidden">
+            <label for="drawer-check" class="drawer-open"><span></span></label>
+
+            <nav class="drawer-content">
+                <ul class="drawer-list">
+                    <li class="drawer-item"><a href="index.html">Intro</a></li>
+                    <li class="drawer-item"><a href="about.html">About</a></li>
+                    <li class="drawer-item"><a href="member.html">Member</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+</header>
+
     <div class="top-background">
         <div class="background-txt">
             <p class="main-txt">インタラクティブピタゴラ作品</p>
@@ -54,6 +72,9 @@
       <div class="video">
         <video src="images/background1.mp4" autoplay loop muted></video>
       </div>
+
+      <img src="images/background-sp.webp" alt="背景" class="sp-background">
+
     <div class="main">
         <p class="title"> - コロコロ太陽系 - </p>
         <p>太陽系の惑星である水星、金星、地球、火星、木星、土星、天王星、海王星と準惑星である冥王星の９つの星の並びを</p>
@@ -63,11 +84,24 @@
         <p>来場した子供たちは、この作品を通してピタゴラを動かす楽しみを体験すると共に</p>
         <p>太陽系の惑星、準惑星についての知識を学ぶことが出来る。</p>
     </div>
+
+    <div class="sp-main">
+      <p class="title"> - コロコロ太陽系 - </p>
+        <p>太陽系の惑星を模したピタゴラ作品<br><br>科学館やプラネタリウムへ来場した子供たちを<br><br>ターゲットとして製作した。</p>
+        <p><br><br>来場した子供たちにカードを渡し、<br><br>出口の手前でピタゴラを動かす。<br><br>来場した子供たちは、この作品を通して、<br><br>ピタゴラの楽しさと共に太陽系の惑星に<br><br>ついて学ぶことができる。</p>
+    </div>
+
     <footer>
-        <div class="footer-exp">
-            <p>2021 情報表現基礎Ⅲ チーム４ 「コロコロ太陽系」</p>
-            <p>グループワーク課題 - インタラクティブピタゴラ装置 -</p>
-        </div>
-    </footer>
+      <div class="footer-exp">
+          <p>2021 情報表現基礎Ⅲ チーム４ 「コロコロ太陽系」</p>
+          <p>グループワーク課題 - インタラクティブピタゴラ装置 -</p>
+      </div>
+
+      <div class="sp-footer">
+          <p> 2021 情報表現基礎Ⅲ チーム4</p>
+          <p>「コロコロ太陽系」</p>
+      </div>
+  </footer>
+
 </body>
 </html>

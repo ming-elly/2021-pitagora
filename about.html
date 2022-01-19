@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/about.css">
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <!-- フォント用 CSS / JavaScript-->
     <link rel="stylesheet" href="https://use.typekit.net/huv6piu.css">
     <script>
@@ -32,6 +34,7 @@
     <title>About</title>
 </head>
 <body>
+
     <header>
         <div class="container">
             <div class="header-left">
@@ -44,7 +47,23 @@
                 <a href="gallery.html">Gallery</a>
             </div>
         </div>
+
+        <div class="sp-header">
+            <div class="drawer">
+                <input type="checkbox" id="drawer-check" class="drawer-hidden">
+                <label for="drawer-check" class="drawer-open"><span></span></label>
+
+                <nav class="drawer-content">
+                    <ul class="drawer-list">
+                        <li class="drawer-item"><a href="index.html">Intro</a></li>
+                        <li class="drawer-item"><a href="about.html">About</a></li>
+                        <li class="drawer-item"><a href="member.html">Member</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
     </header>
+
     <div class="top-background">
         <div class="background-txt">
             <p class="main-txt">インタラクティブピタゴラ作品</p>
@@ -54,6 +73,9 @@
       <div class="video">
         <video src="images/background1.mp4" autoplay loop muted></video>
       </div>
+
+      <img src="images/background-sp.webp" alt="背景" class="sp-background">
+
     <div class="about-video">
         <!-- ビデオタグ (仮で画像配置)-->
         <iframe src="https://drive.google.com/file/d/1Y9J_0U4JqrrJzwMANTWjYxJxll-r9Wq_/preview?usp=drivesdk" width="700px" height="400px" title="function-exp" frameborder="0" allow="autoplay; accelerometer; picture-in-picture; gyroscope; encrypted-media; clipboard-write" allowfullscreen></iframe>
@@ -203,10 +225,162 @@
             </p>
         </div>
     </div>
+
+    <div class="sp-about-container">
+
+        <div class="sp-gimikku-intro">
+            <p>- 装置について -</p>
+        </div>
+
+        <div class="sp-about-video">
+            <iframe src="https://drive.google.com/file/d/1Y9J_0U4JqrrJzwMANTWjYxJxll-r9Wq_/preview?usp=drivesdk" width="80%" height="auto" title="function-exp" frameborder="0" allow="autoplay; accelerometer; picture-in-picture; gyroscope; encrypted-media; clipboard-write" allowfullscreen></iframe>
+            <div class="sp-video-txt">
+                <p>太陽系をテーマにしたこの作品には、太陽系に</p>
+                <p>倣って9つの仕掛けがあります。それぞれの惑星、</p>
+                <p>準惑星をモチーフにしたカードを装置に差し込む</p>
+                <p>ことで動きます。差し込むカードに応じてビー玉は</p>
+                <p>異なるギミックのエリアを通ります。それぞれの</p>
+                <p>エリアを通ったビー玉は、最後１か所に集まります。</p>
+            </div>
+        </div>
+
+        <div class="sp-about-top">
+            <img src="images/about/souti.webp" alt="装置" width="80%">
+            <div class="sp-top-txt">
+                <p>起動装置はIT部と射出部に分かれています。</p>
+                <p>射出部はカード両端に開いた四角い穴によって</p>
+                <p>ビー玉のストッパーである針が落ち、カードに</p>
+                <p>応じたビー玉が射出されます。LEDと照度センサに</p>
+                <p>よってカードを認識し、PCにイラスト&テキストが</p>
+                <p>表示される仕組みになっています。</p>
+            </div>
+        </div>
+
+        <div class="sp-about-top">
+            <img src="images/about/card.webp" alt="カード" width="80%">
+            <div class="sp-top-txt">
+                <p>装置に差し込むカードは全部で9種類あります。</p>
+            </div>
+        </div>
+        
+        <div class="sp-gimikku-intro">
+            <p>- ギミック紹介 -</p>
+        </div>
+
+        <div class="sp-about-planet">
+            <img src="images/about/1.webp" alt="1" width="80%">
+            <div class="sp-planet-txt">
+                <p>3つの歯車があるギミックです。ビー玉が転がって</p>
+                <p>きて歯車に落ちるとビー玉の重さで歯車が回ります。</p>
+                <p>そして、ビー玉は3つの歯車の間を通り抜けて</p>
+                <p>下へと転がっていきます。</p>
+            </div>
+        </div>
+
+        <div class="sp-about-planet">
+            <img src="images/about/2.webp" alt="2" width="80%">
+            <div class="sp-planet-txt">
+                <p>ペットボトルの飲み口を使ったギミックです。ビー玉</p>
+                <p>が転がってくると、遠心力で縁をぐるぐると回って</p>
+                <p>下へと転がっていきます。</p>
+            </div>
+        </div>
+
+        <div class="sp-about-planet">
+            <img src="images/about/3.webp" alt="3" width="80%">
+            <div class="sp-planet-txt">
+                <p>パチンコ台を参考にしたギミックです。数か所の壁</p>
+                <p>に輪ゴムを使うことによって、ビー玉の速度を安定</p>
+                <p>させています。これによってビー玉は安定した状態</p>
+                <p>を保ちながら下へと転がっていきます。</p>
+            </div>
+        </div>
+
+        <div class="sp-about-planet">
+            <img src="images/about/4.webp" alt="4" width="80%">
+            <div class="sp-planet-txt">
+                <p>段差を活用したギミックです。装置から送られてきた</p>
+                <p>ビー玉は段差をごろごろ転がっていきます。</p>
+            </div>
+        </div>
+
+        <div class="sp-about-planet">
+            <img src="images/about/5.webp" alt="5" width="80%">
+            <div class="sp-planet-txt">
+                <p>爪楊枝を活用したギミックです。転がってきたビー玉</p>
+                <p>は爪楊枝のレールをころころと下へ転がります。</p>
+            </div>
+        </div>
+
+        <div class="sp-about-planet">
+            <img src="images/about/6.webp" alt="6" width="80%">
+            <div class="sp-planet-txt">
+                <p>滑車を活用したギミックです。滑車の片側の箱には</p>
+                <p>転がっているビー玉よりも小さなビー玉が入ってい</p>
+                <p>ます。転がってきたビー玉が滑車の空箱の方に入る</p>
+                <p>と重さで下に下がります。下に下がった箱は底にあ</p>
+                <p>る台によって倒れ、再びビー玉は転がります。</p>
+            </div>
+        </div>
+
+        <div class="sp-about-planet">
+            <img src="images/about/7.webp" alt="7" width="80%">
+            <div class="sp-planet-txt">
+                <p>4つ目に紹介した段差のギミックの逆バージョンです。</p>
+            </div>
+        </div>
+
+        <div class="sp-about-planet">
+            <img src="images/about/8.webp" alt="8" width="80%">
+            <div class="sp-planet-txt">
+                <p>このギミックは他のギミックに比べるととても緩急</p>
+                <p>のあるギミックとなっています。勢いよく転がって</p>
+                <p>きたビー玉は1度レールから落ちることで勢いを失い</p>
+                <p>ます。その後は緩やかに転がっていきます。</p>
+            </div>
+        </div>
+
+        <div class="sp-about-planet">
+            <img src="images/about/9.webp" alt="9" width="80%">
+            <div class="sp-planet-txt">
+                <p>針金をループ状にレールにしたギミックです。</p>
+                <p>転がってきたビー玉は遠心力の力で針金のレールから</p>
+                <p>飛び出すことなく転がっていきます。</p>
+            </div>
+        </div>
+
+        <div class="sp-about-bottom">
+            <img src="images/about/last.webp" alt="終着点" width="80%">
+            <div class="sp-bottom-txt">
+                <p>ボールは最終的にこの部分に転がってきます。右から</p>
+                <p>水星、金星、地球、火星、木星、土星、天王星、</p>
+                <p>海王星、冥王星の順番に並びます。</p>
+            </div>
+        </div>
+
+        <div class="sp-gimikku-intro">
+            <p>- 作品紹介動画 -</p>
+        </div>
+
+        <div class="sp-about-video">
+            <iframe src="https://drive.google.com/file/d/1dLgRvm7HKFB-IrmKK88Kkpla8eHxWZB8/preview?usp=drivesdk" width="80%" height="auto" title="function-exp" frameborder="0" allow="autoplay; accelerometer; picture-in-picture; gyroscope; encrypted-media; clipboard-write" allowfullscreen></iframe>
+        </div>
+
+
+        
+
+
+    </div>
+
     <footer>
         <div class="footer-exp">
             <p>2021 情報表現基礎Ⅲ チーム４ 「コロコロ太陽系」</p>
             <p>グループワーク課題 - インタラクティブピタゴラ装置 -</p>
+        </div>
+
+        <div class="sp-footer">
+            <p> 2021 情報表現基礎Ⅲ チーム4</p>
+            <p>「コロコロ太陽系」</p>
         </div>
     </footer>
 </body>

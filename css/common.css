@@ -296,11 +296,7 @@ footer{
         display: block;
     }
 
-    .footer-exp{
+    footer{
         display: none;
-    }
-    .sp-footer{
-        display: block;
-        color: white;
     }
 }

@@ -31,6 +31,11 @@ p{
 }
 
 @media screen and (max-width: 640px) {
+
+    body{
+        background-color: rgba(0, 49, 82, 0.849);
+    }
+
     .member-main{
         display: none;
     }
@@ -50,6 +55,8 @@ p{
         font-family: zen-kaku-gothic-new, sans-serif;
         font-weight: 400;
         font-style: normal;
+        color: white;
+        opacity: 0.7;
     }
 
     

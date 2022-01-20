@@ -187,6 +187,7 @@ footer{
     }
     .sp-header{
         display: block;
+        width: 100%;
     }
     .sp-header a{
         text-decoration: none;
